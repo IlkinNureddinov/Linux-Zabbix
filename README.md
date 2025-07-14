@@ -1,27 +1,18 @@
-# Zabbix Lab - Installation and Configuration Guide
+# Zabbix Lab Project
 
-This repository contains all necessary files, scripts, and instructions to install and configure a fully working Zabbix monitoring server environment for lab and testing purposes.
+## Project Structure
 
----
+- `config/` — Zabbix server and web configuration files
+- `mysql/` — MySQL schema and data SQL files
+- `scripts/` — Helper bash scripts for initialization and management
+- `docs/` — Documentation files
+- `README.md` — This file
 
-## Repository Structure
+## Setup Instructions
 
-- `mysql/`  
-  Contains SQL schema, images, and data files along with an initialization script for the Zabbix database.
+1. Copy config files to `/etc/zabbix/` on your server.
+2. Run the database initialization script:
 
-- `config/`  
-  Configuration files for Zabbix server, Zabbix agent, and PHP (timezone fix).
-
-- `scripts/`  
-  Helper bash scripts for initializing the database, starting services, and resetting the Zabbix database user password.
-
-- `docs/`  
-  Optional directory for additional documentation like detailed setup guides and troubleshooting.
-
-- `.gitignore`  
-  To ignore unnecessary files from being committed to the repository.
-
----
-
-
+```bash
+bash scripts/init_db.sh
 
