@@ -16,3 +16,4 @@
 ```bash
 bash scripts/init_db.sh
 
+# Linux-Zabbix
